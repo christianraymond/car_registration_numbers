@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Registration Numbers</title>
+    <link href="main_Css/registration_numbers.css" rel="stylesheet" /> </head>
+
+<body>
+
+  <ul>
+      <li><a class="active" href="http://christianraymond.github.io/">Home</a></li>
+      <li><a href="https://www.google.co.za/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#tbm=nws&q=news24&*">News</a></li>
+      <li><a href="mailto:christian1.raymond@gmail.com">Contact</a></li>
+      <li><a href="http://christianraymond.github.io/">About</a></li>
+    </ul>
+
+    <div class="header">
+        <h3>Registration Numbers</h3>
+    </div>
+
+    <div class="navbar">
+        <h4>Add Registration</h4>
+        <h2>|</h2>
+        <h4>View Registration</h4>
+    </div>
+
+
+
+    <div class="Content">
+        <div class="containerOne">
+            <form id="enterReg">
+                <label>Registration Number:
+                    <input type="text" name="registration_number" id="regNum" />
+                </label>
+                <input type="button" value="Add" id="addButton" />
+            </form>
+        </div>
+
+        <div class="containerTwo">
+            <form id="options">
+                <label>Select Town: </label>
+
+                <select id="#options">
+                    <option value="CA" text="Cape Town">Cape Town</option>
+                    <option value="CL" text="Stellenbosch">Stellenbosch</option>
+                    <option value="CJ" text="Paarl">Paarl</option>
+                    <option value="CY" text="Bellville">Bellville</option>
+
+                </select>
+            </form>
+        </div>
+
+        <div class="addedRegistrations">
+        <h3>Added Registrations:</h3>
+        <ul class="list">
+            <script src="main_js/registration_numbers.js" type="text/x-handlebars-some-template" id="registrationList">
+                <li id="registrationNumber">{{registration_number}}
+                </li>
+            </script>
+        </ul>
+    </div>
+
+        <div class= "searchResults">
+        <h3 class = "searchedTown">
+
+        <script src="main_js/registration_numbers.js" type="text/x-handlebars-some-template" id="town">
+        <span id ="search">{{town}}</span>
+        </script>
+        </h3>
+        <ul class="list2">
+            <ul> </ul>
+        </div>
+    </div>
+    <div class="footer">
+<kbd><strong>Note:</strong> This site has been done through <a href="http://www.projectcodex.co/learn/"> codeX </a>curruculum</kbd>
+
+  <p>Contact information: <a href="mailto:christian@codexproject.co">christian@projectcode.co</a>.</p>
+  <b>ChristianNgubanacopyright@2017</b>
+</div>
+
+    <script src="scripts/handlersbars-v4.0.5.js" charset="utf-8" type="text/javascript"></script>
+    <script src="main_js/registration_numbers.js" charset="utf-8"></script>
+    <script src="main_js/jquery.js" charset="utf-8"></script>
+</body>
+
+</html>
