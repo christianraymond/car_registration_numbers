@@ -13,7 +13,7 @@ body {
     position: absolute;
 }
 
-.header {
+.first {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -27,7 +27,7 @@ body {
     justify-content: center;
 }
 
-.navbar {
+.scond {
     margin: 0;
     padding: 0;
     background-color: steelblue;
@@ -72,7 +72,7 @@ h4 {
     height: 40px
 }
 
-.containerOne {
+.containerO {
     margin: 15px 0;
     width: 40%;
     height: 10%;
@@ -89,7 +89,7 @@ h4 {
     -webkit-transition: 1s ease-in-out;
     -moz-transition: 1s ease-in-out;
 }
-.containerTwo {
+.containers {
     margin: 15px 0 0 100px;
     width: 40%;
     height: 10%;
@@ -128,7 +128,7 @@ h4 {
 }
 
 #addButton:hover {
-    background-color: darkgreen;
+    background-color: ;
     border: 1px solid darkgreen;
     color: #fff;
     -webkit-box-shadow: 0.2px 0.2px 0.2px black;
@@ -136,7 +136,7 @@ h4 {
     box-shadow: 0.2px 0.2px 0.2px black;
 }
 
-.addedRegistrations {
+.increasePlatesNums {
     margin: 120px -307px;
     width: 40%;
     height: 90%;
@@ -145,8 +145,6 @@ h4 {
 
 .searchResults {
     margin: 120px 310px;
-    /*width: 240%;
-    height: 190%;*/
     position: absolute;
 
 }
@@ -176,7 +174,7 @@ li {
     height: 20px;
     color: red;
     font-weight: bold;
-    /*font-family: fantasy;*/
+    font-family: fantasy;*/
     -webkit-display: flex;
     -moz-display: flex;
     display: flex;
@@ -185,19 +183,6 @@ li {
     animation: rotateOut 500ms ease-in-out 1;
 }
 
-#imageNotFound {
-    margin: 0 50px;
-    background-image: url('../img/notfound.png');
-    height: 20px;
-    transition: 500ms ease-in-out;
-    animation: rotateOut 500ms ease-in-out 1;
-}
-
-@keyframes rotateOut {
-    from {
-        transform: rotateY(90deg);
-    } to {transform: rotateY(0deg);}
-}
 .townList {
     margin: 10px 0;
     font-weight: bold;
@@ -221,7 +206,7 @@ li {
 }
 
 .footer {
- background: #eee;
+ background: grey;
  bottom: -700px;
  text-align: center;
  position: relative;
@@ -233,7 +218,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background-color: #333;*/
 }
 
 li {
@@ -250,5 +234,5 @@ li a {
 
 li a:hover {
     background-color: #111;
- position: relative;
+    position: relative;
 }
