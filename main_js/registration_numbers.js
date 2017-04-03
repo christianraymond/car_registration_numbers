@@ -33,7 +33,7 @@ button.addEventListener('click', function () {
     //check if textbox is empty or not
     if (regNumber.value === "") {
         //alert user
-        alert('Input a Registration Number!');
+        alert('First enter a Registration Number!');
     } else {
         //convert text to uppercase
         var text = regNumber.value;
@@ -70,7 +70,7 @@ dropDown.onchange = function () {
     var towns = {'selectedTown':[{'city': town.text}]};
 
     //output the search results with selected town
-    searchedTown.innerHTML = 'Showing search results for: ' + towns.selectedTown[0].city;
+    searchedTown.innerHTML = 'Your search results for: ' + towns.selectedTown[0].city;
 
     //clear the ul innerHMTL element
     list2.innerHTML = "";

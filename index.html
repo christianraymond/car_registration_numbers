@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Found car registration numbers</title>
-    <link href="main_Css/registration_numbers.css" rel="stylesheet" /> </head>
+    <title>Find car registration numbers</title>
+    <link href="main_Css/registration_numbers.css" rel="stylesheet" /></head>
 <body>
   <ul>
       <li><a class="active" href="index.html">Home</a></li>
@@ -12,19 +12,19 @@
       <li><a href="http://christianraymond.github.io/">About Me</a></li>
   </ul>
     <div class="first">
-      <h3>Plate Registration numbers</h3>
+     <div id="myAnimation"><h3>Plate Registration numbers</h3></div> 
     </div>
     <div class="scond">
         <h4>Add plate numbers</h4>
-        <h4>View Registration</h4>
+        <h4>View plate numbers</h4>
     </div>
     <div class="Content">
       <div class="containerO">
       <form id="enterReg">
-      <label>plates numbers:
-      <input type="text" name="registration_number" id="regNum" />
+      <label>Enter plates numbers:
+      <input type="text" name="registration_number" id="regNum" placeholder="Type plate number here.."/>
       </label>
-      <input type="button" value="Add" id="addButton" />
+      <input type="button" value="Click to Add" id="addButton" />
       </form>
       </div>
 
@@ -33,15 +33,17 @@
        <label>Select Town: </label>
 
         <select id="#options">
+        <option value="CA" text="Cape Town">Cape Town</option>
         <option value="CL" text="Stellenbosch">Stellenbosch</option>
         <option value="CY" text="Bellville">Bellville</option>
-        <option value="CA" text="Cape Town">Cape Town</option>
         <option value="CJ" text="Paarl">Paarl</option>
+        <option value="GP" text="Gauteng">Gauteng</option> 
+        <option value="FS" text="Free State">Free State</option>    
         </select>
          </form>
       </div>
-        <div class="increasePlatesNums">
-          <h3>Added Registrations:</h3>
+        <div class="addedResultPlateNum">
+          <h3>See your result bellow:</h3>
         <ul class="list">
           <script src="main_js/registration_numbers.js" type="text/x-handlebars-some-template" id="registrationList">
           <li id="registrationNumber">{{registration_number}}</li>
